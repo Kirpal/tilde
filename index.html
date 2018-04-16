@@ -432,7 +432,7 @@
     _setTime() {
       const date = new Date();
       if (date.getHours() > 12) {
-        const hours = date.getHours() - 12;
+        const hours = (date.getHours() - 12);
         const amPm = 'PM';
       } else {
         const hours = date.getHours();
