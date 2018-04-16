@@ -151,6 +151,7 @@
     margin-top: -.06em;
     font-size: 6rem;
     letter-spacing: .05em;
+    text-align: center;
     cursor: pointer;
   }
 
@@ -355,7 +356,10 @@
 </style>
 
 <div class="center">
-  <time id="clock"></time>
+  <div>
+    <time id="clock"></time>
+    <aside id="help"></aside>
+  </div>
 </div>
 
 <form class="overlay center" id="search-form" autocomplete="off" spellcheck="false">
@@ -364,8 +368,6 @@
     <ul id="search-suggestions"></ul>
   </div>
 </form>
-
-<aside class="overlay center" id="help"></aside>
 
 <script>
   const $ = {
