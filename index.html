@@ -432,10 +432,10 @@
     _setTime() {
       const date = new Date();
       if (date.getHours() > 12) {
-        const hours = (date.getHours() - 12);
+        const hours = (date.getHours() - 12).toString();
         const amPm = 'PM';
       } else {
-        const hours = date.getHours();
+        const hours = date.getHours().toString();
         const amPm = 'AM';
       }
       const minutes = this._pad(date.getMinutes());
