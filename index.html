@@ -431,8 +431,7 @@
 
     _setTime() {
       const date = new Date();
-      const hours = (date.getHours() > 12) ? date.getHours() - 12 : date.getHours();
-      hours = (hours === 0) ? 12 : hours;
+      const hours = (date.getHours() > 12) ? date.getHours() - 12 : (date.getHours() === 0) ? 12 : date.getHours();
       const amPm = (date.getHours() > 12) ? 'PM' : 'AM';
       const minutes = this._pad(date.getMinutes());
       this._el.innerHTML = hours + this._delimiter + minutes + '<span id="am-pm">' + amPm + '</span>';
