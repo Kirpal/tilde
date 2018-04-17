@@ -434,10 +434,12 @@
       if (date.getHours() > 12) {
         const hours = (date.getHours() - 12).toString();
         const amPm = 'PM';
+        console.log(hours);
       } else {
         const hours = date.getHours().toString();
         const amPm = 'AM';
       }
+      console.log(hours);
       const minutes = this._pad(date.getMinutes());
       this._el.innerHTML = hours + this._delimiter + minutes + amPm;
     }
