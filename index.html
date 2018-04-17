@@ -439,7 +439,7 @@
       const amPm = (date.getHours() > 12) ? 'PM' : 'AM';
       const minutes = this._pad(date.getMinutes());
       this._el.innerHTML = hours + this._delimiter + minutes + '<span id="am-pm">' + amPm + '</span>';
-      this._el.setAttribute('datetime', date.toTimeString();
+      this._el.setAttribute('datetime', date.toTimeString());
     }
 
     _start() {
